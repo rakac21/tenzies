@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, 'sans-serif';
+    background-color: #0b2434;
+}
+p {
+    color: #0b2434d0;
+}
+
+div#root {
+    height: 100%;
+    padding: 20px;
+}
+main {
+    padding: 0 20px 0 20px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 480px;
+    max-width: 570px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    height: 100%;
+    > p {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.dice-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 25px
+}
+
+.dice-container button {
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    font-weight: 750;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Karla, 'sans-serif';
+}
+
+.dice-container button:disabled {
+    color: black;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+.roll-dices-button, .pause {
+    white-space: nowrap;
+    font-family: Karla, 'sans-serif';
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 21px; 
+    margin-top: 60px;
+    font-size: 1.7rem;
+    width: fit-content;
+    background-color: rgb(85, 26, 248);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.pause {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom:10px;
+    font-size: 25px;
+}
+
+.sr-only {
+    font-size: 1.1rem;
+    /*  */
+}
+h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.stopwatch {
+    float: right;
+    font-size: 30px;
+}
+
+.counter {
+    float: left;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px
+}
